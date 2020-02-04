@@ -17,8 +17,6 @@ a{text-decoration: none;
 }
 
 #main-nav{
-	/*display: flex;*/
-	/*height: 85px;*/
 	background: $deepRed;
 	ul{
 		@include clearFix;
@@ -80,6 +78,23 @@ a{text-decoration: none;
 	img{
 		border-radius: 50%;
 	}
+}
+
+.search-container{
+	 padding-top: 13px;
+
+	 input{
+	 	height: 20px;
+	 	border: 1px solid $offWhite;
+	 }
+	 button{
+	 	height: 24px;
+	 	border: 1px solid $offWhite;
+	 	i{
+	 		color: $deepRed;
+	 	}
+	 }
+
 }
 
 /*.weoffer{
@@ -232,12 +247,63 @@ a{text-decoration: none;
 
 }
 
-footer{
-	/*display: flex;*/
+/*DETAIL PAGE*/
+.detail{
+	height: calc(100vh - 158px);
+}
+.detail-section{
+	
 	display: flex;
-	/*position: fixed;
-	bottom: 0;
-	width: 100%;*/
+	padding-top: 50px;
+	img{
+		width: 400px;
+		height: 500px;
+		border-radius: 10px;
+	}
+	aside{
+		padding-top: 50px;
+		padding-left: 50px;
+		p{
+			font-size: $mediumText;
+		}
+		span{
+			color: $deepRed;
+			text-transform: uppercase;
+			font-size: $normalText;
+		}
+	}
+	.in_stock{
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid grey;
+		width: 30%;
+		display: flex;
+		
+	}
+}
+
+.comments_reviews{
+	padding-top: 10px;
+	ul{
+		display: flex;
+		li{
+			padding-right: 50px;
+		
+		}
+	}
+	
+	a{
+		font-size: $normalText;
+		color: gray;
+		&:hover{
+			color: $deepRed;
+
+		}
+	}
+}
+
+footer{
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: $deepRed;
