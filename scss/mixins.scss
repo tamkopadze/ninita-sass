@@ -68,7 +68,7 @@
 @mixin button{
 	width: 120px;
     height: 50px;
-    border: 1px solid gray;
+    border: 1px solid $deepRed;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.5s;
