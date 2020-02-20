@@ -3,56 +3,44 @@
   <head>
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
       <div class="wrapper">
       <div class="logo"><a href="index.html"><img src="img/ninita.jpg"></a></div>
-      <nav id="main-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
+      <nav class="main-nav">
+        <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">New Collection</a></li>
-            <div class="search-container">
-              <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
              <div class="dropdown">
-              <li class="dropbtn"><a href="#">Products</a>
+              <li class="dropbtn"><a href="products.html">Products</a>
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="products.html">Link 1</a>
+                  <a href="products.html">Link 2</a>
+                  <a href="products.html">Link 3</a>
                 </div>
             </li>
             </div>
             <li><a href="#">Portfolio</a></li>
-            <!-- <li><a href="#">Blog</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <div class="burger none" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          <div class="bar3"></div>
+          </div>
       </nav>
       <div class="login-register">
-        <p>login | <span> register </span></p>
-        
+        <button class="login"> login </button> <button class="register">register</button> 
       </div>
       </div>
-     <!--  <div class="lead-banner">
-        <img src="img/banner.jpg" />
-        <div class="banner-content">
-          <div class="wrapper">
-            <span class="title">ნინიტას ხელნაკეთი აქსესუარები</span>
-            <span class="sub-title">აირჩიე შენთვის სასურველი</span>
-          </div>
-        </div>
-      </div> -->
     </header>
 
 
 <div class="wrapper">
 	<div class="contact_blocks">
-		<div class="contact_block contact_block_mob">
+		<div class="contact_block">
 			<img src="img/facebook.png">
 			<h4>Find us at</h4>
 			<p>facebook</p>
