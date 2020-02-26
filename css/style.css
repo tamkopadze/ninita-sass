@@ -46,6 +46,7 @@ button {
 
 header {
   background-color: #bf2642;
+  /*Responsive navigation bar*/
 }
 header .main-nav {
   display: flex;
@@ -94,6 +95,26 @@ header .login-register button:hover {
 }
 header .login-register .login {
   margin-right: 10px;
+}
+header .responsive-navigation {
+  height: 100vh;
+  background-color: #bf2642;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+header .responsive-navigation li {
+  padding: 20px;
+}
+header .responsive-navigation a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+  color: #f8f9fb;
 }
 header .dropbtn {
   color: white;
@@ -500,6 +521,10 @@ footer .icons i {
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .visable {
+    display: block !important;
   }
 
   /*Services New Collection - Best Seller*/
