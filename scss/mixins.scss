@@ -1,10 +1,11 @@
 /*Mixins*/
 
 /*BANNEr*/
- @mixin banner{
+/* @mixin banner{
 	width: 100%;
 	position: relative;
 	color: white;
+	
 	.banner-content{
 		position: absolute;
 		top: 50px;
@@ -12,15 +13,16 @@
 	}
 	img{
 		width: 100%;
+		opacity: 0.5;
 	}
 	span{
 		font-size: $bannerHeading;
 		display: block;
 		text-transform: uppercase;
 		font-weight: bold;
-		/*@include mQ(3000px, 1200px){
+		@include mQ(3000px, 1200px){
 			font-size: 68px;
-		}*/
+		}
 	}
 	span.title{
 		font-weight: normal;
@@ -29,7 +31,7 @@
 	}
 
 }
-
+*/
 /*CLEAR BOTH*/
 
 @mixin clearFix{
