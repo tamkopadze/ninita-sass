@@ -70,8 +70,9 @@
 @mixin button{
 	width: 120px;
     height: 50px;
-    border: 1px solid $deepRed;
-    border-radius: 25px;
+   /* border: 1px solid grey;
+    border-radius: 25px;*/
+    border: none;
     cursor: pointer;
     transition: 0.5s;
     outline: none;
@@ -84,8 +85,8 @@
     align-items: center;
     text-align: center;*/
 	&:hover {
-		color: #fff;
-		background-color: $deepRed;
+		color: #fba200c7;
+		
 	}
  
 }
