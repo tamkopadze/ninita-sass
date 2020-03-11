@@ -202,7 +202,7 @@ header{
 	font-size: $sectionHeading;
 	color: $deepRed;
 	padding-bottom: 20px;
-	border-bottom: 1px solid gray;
+	/*border-bottom: 1px solid gray;*/
 	width: 30%;
 } 
 
@@ -288,7 +288,7 @@ header{
 	}
 
 
-	.morebutton{
+	/*.morebutton{
 		margin-top: 50px;
 		text-align: center;
 		border: 1px solid $deepRed;
@@ -305,14 +305,15 @@ header{
 			color: $deepRed;
 			
 		}
-	}
+	}*/
 	
 }
 
 .seemore{
 		@include button;
-		color: #432f92c7;
-		margin-bottom: 20px;	
+		color: #bf2642;
+		margin-bottom: 20px;
+		background-color: #a0979b26;	
 	}
 .top-selling{
 	ul{

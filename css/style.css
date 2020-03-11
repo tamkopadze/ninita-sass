@@ -253,7 +253,7 @@ section h1 {
   font-size: 24px;
   color: #bf2642;
   padding-bottom: 20px;
-  border-bottom: 1px solid gray;
+  /*border-bottom: 1px solid gray;*/
   width: 30%;
 }
 
@@ -286,6 +286,24 @@ section h1 {
 .new-collection {
   padding-top: 20px;
   box-sizing: border-box;
+  /*.morebutton{
+  	margin-top: 50px;
+  	text-align: center;
+  	border: 1px solid $deepRed;
+
+  	&:hover{
+  		p{
+  			color: $offWhite;
+  			border: 1px solid $offWhite;
+  		}
+  		}
+  	p{
+  		font-size: $normalText;
+  		font-weight: bold;
+  		color: $deepRed;
+
+  	}
+  }*/
 }
 .new-collection .description {
   display: flex;
@@ -328,24 +346,10 @@ section h1 {
   color: #bf2642;
   text-transform: uppercase;
 }
-.new-collection .morebutton {
-  margin-top: 50px;
-  text-align: center;
-  border: 1px solid #bf2642;
-}
-.new-collection .morebutton:hover p {
-  color: #f8f9fb;
-  border: 1px solid #f8f9fb;
-}
-.new-collection .morebutton p {
-  font-size: 14px;
-  font-weight: bold;
-  color: #bf2642;
-}
 
 .seemore {
-  width: 120px;
-  height: 50px;
+  width: 210px;
+  height: 35px;
   /* border: 1px solid grey;
    border-radius: 25px;*/
   border: none;
@@ -355,17 +359,15 @@ section h1 {
   font-weight: bold;
   display: block;
   margin: 0 auto;
+  border-radius: 25px;
   /*  display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;*/
-  color: #432f92c7;
+  color: #bf2642;
   margin-bottom: 20px;
+  background-color: #a0979b26;
 }
-.seemore:hover {
-  color: #fba200c7;
-}
-
 .top-selling ul {
   display: flex;
   justify-content: space-between;
