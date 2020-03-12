@@ -77,6 +77,8 @@ button {
 
 header {
   background-color: #bf2642;
+  /*position: sticky;
+  top: 0;*/
   /*Responsive navigation bar*/
 }
 header .main-nav {
@@ -130,7 +132,7 @@ header .login-register .login {
 }
 header .responsive-navigation {
   height: calc(100vh - 85px);
-  margin-top: 45px;
+  margin-top: 21px;
   margin-left: -20px;
   /*uketesad rogor gavaketo?*/
   position: absolute;
@@ -141,10 +143,10 @@ header .responsive-navigation {
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 header .responsive-navigation li {
-  padding: 20px;
+  padding: 25px;
 }
 header .responsive-navigation a {
   text-decoration: none;
@@ -252,9 +254,7 @@ section h1 {
   text-transform: uppercase;
   font-size: 24px;
   color: #bf2642;
-  padding-bottom: 20px;
-  /*border-bottom: 1px solid gray;*/
-  width: 30%;
+  padding-top: 25px;
 }
 
 .lead-banner {
@@ -284,7 +284,8 @@ section h1 {
 }
 
 .new-collection {
-  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   /*.morebutton{
   	margin-top: 50px;
@@ -322,6 +323,7 @@ section h1 {
   max-width: 350px;
   height: 300px;
   box-sizing: border-box;
+  padding-right: 20px;
   /*margin-right: 35px;*/
   margin-bottom: 50px;
 }
@@ -466,22 +468,51 @@ section h1 {
 }
 
 /*PRODUCT SECTION PAGE*/
-.product-section {
+.product-page {
   display: flex;
 }
-.product-section aside {
-  padding: 70px 70px 0 0;
-  width: 100%;
-  max-width: 150px;
+
+.new-collection-section {
+  padding-top: 45px;
 }
-.product-section aside h1 {
+
+h1 {
   font-size: 24px;
   text-transform: uppercase;
   color: #bf2642;
-  border-bottom: 1px solid gray;
   padding-bottom: 20px;
 }
-.product-section aside button {
+
+.aside-checkbox {
+  padding: 70px 70px 0 0;
+  position: sticky;
+}
+.aside-checkbox .sticky {
+  position: sticky;
+  top: 0;
+}
+.aside-checkbox h1 {
+  color: #bf2642;
+  position: sticky;
+  top: 70px;
+}
+.aside-checkbox form {
+  position: sticky;
+  top: 150px;
+}
+.aside-checkbox form .checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: #bf2642;
+  border-radius: 25px;
+  border: 1px solid #bf2642;
+}
+.aside-checkbox form li {
+  padding-bottom: 30px;
+  width: 150px;
+}
+.aside-checkbox button {
   width: 80px;
   height: 30px;
   border: 1px solid #bf2642;
@@ -491,9 +522,6 @@ section h1 {
   font-weight: bold;
   color: #bf2642;
 }
-.product-section form li {
-  padding-bottom: 30px;
-}
 
 footer {
   display: flex;
@@ -502,7 +530,6 @@ footer {
   background-color: #bf2642;
 }
 footer .footer-content {
-  /*padding: 30px;*/
   padding: 30px 0px;
 }
 footer .copyright {
@@ -542,7 +569,7 @@ footer .icons i {
   .burger {
     display: inline-block;
     cursor: pointer;
-    /*padding-top: 25px;*/
+    padding-top: 25px;
   }
 
   .bar1, .bar2, .bar3 {
@@ -569,6 +596,11 @@ footer .icons i {
 
   .visable {
     display: block !important;
+  }
+
+  /*Main ext on  lead banner*/
+  .lead-banner span {
+    font-size: 35px;
   }
 
   /*Services New Collection - Best Seller*/
@@ -620,9 +652,36 @@ footer .icons i {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  /*Prudct Page*/
+  .aside-checkbox {
+    display: none;
+  }
+
+  .aside-checkbox {
+    position: absolute;
+    display: block;
+  }
+
+  .new-collection-section {
+    width: 100%;
+  }
+  .new-collection-section h1 {
+    text-align: center;
+  }
+  .new-collection-section .new-collection {
+    display: flex;
+    justify-content: center;
+  }
 }
 /*Detail Page Responsive*/
 @media screen and (max-width: 768px) {
+  /*Main ext on  lead banner*/
+  .lead-banner span {
+    font-size: 24px;
+    line-height: 70px;
+  }
+
   .detail-section {
     display: flex;
     flex-direction: column;
@@ -634,8 +693,12 @@ footer .icons i {
   .detail-section aside h1 {
     width: 100%;
     text-align: center;
-    border-bottom: none;
-    padding-bottom: 0;
+    position: absolute;
+    top: 68px;
+    padding-top: 35px;
+    /*padding-bottom: 15px;*/
+    /*border-bottom: none;
+    padding-bottom: 0;*/
   }
 
   /*Main detail img*/
@@ -645,7 +708,8 @@ footer .icons i {
   .detail-img img {
     width: 500px;
     text-align: center;
-    height: calc(100vh - 170px);
+    margin-top: 20px;
+    height: calc(100vh - 220px);
   }
 
   /*On the detail page little imges under the big image*/

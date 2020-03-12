@@ -10,6 +10,8 @@ button{
 }
 header{
 	background-color: $deepRed;
+	/*position: sticky;
+	top: 0;*/
 	.main-nav{
 	display: flex;
 	justify-content: space-around;
@@ -67,7 +69,7 @@ header{
 /*Responsive navigation bar*/
 .responsive-navigation{
 	height: calc(100vh - 85px);
-	margin-top: 45px;
+	margin-top: 21px;
 	margin-left: -20px; /*uketesad rogor gavaketo?*/
 	position: absolute;
 	width: 100%;
@@ -77,9 +79,9 @@ header{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	z-index: 2;
+	z-index: 1;
 	li{
-		padding: 20px;
+		padding: 25px;
 	}
 	a{
 		text-decoration: none;
@@ -201,9 +203,8 @@ header{
  	text-transform: uppercase;
 	font-size: $sectionHeading;
 	color: $deepRed;
-	padding-bottom: 20px;
-	/*border-bottom: 1px solid gray;*/
-	width: 30%;
+	padding-top: 25px;
+	
 } 
 
 .lead-banner{
@@ -236,7 +237,8 @@ header{
 
 
 .new-collection {
-	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
 	box-sizing: border-box;
 	.description{
 		display: flex;
@@ -258,6 +260,7 @@ header{
 		max-width: 350px;
 		height: 300px;
 		box-sizing: border-box;
+		padding-right: 20px;
 		/*margin-right: 35px;*/
 		margin-bottom: 50px;
 	}
@@ -421,42 +424,65 @@ header{
 
 
 /*PRODUCT SECTION PAGE*/
-
-.product-section{
+	.product-page{
 		display: flex;
-	aside{
-			padding: 70px 70px 0 0;
-			width: 100%;
-			max-width: 150px;
+	}
+
+	.new-collection-section{
+		padding-top: 45px;
+	}
+
 	h1{
-				font-size: $sectionHeading;
-				text-transform: uppercase;
-				color: $deepRed;
-				border-bottom: 1px solid gray;
-				padding-bottom: 20px;
+		font-size: $sectionHeading;
+		text-transform: uppercase;
+		color: $deepRed;
+		padding-bottom: 20px;
 				
-			}
+	}
+	.aside-checkbox{
+		padding: 70px 70px 0 0;
+		position: sticky;
+	.sticky{
+		position: sticky;
+    	top: 0;
+    }
+	h1{
+		color: $deepRed;
+		position: sticky;
+		top: 70px;
+	}
+
+	 form{
+	 	position: sticky;
+		top: 150px;
+		.checkbox{
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			color: $deepRed;
+			border-radius: 25px;
+			border: 1px solid $deepRed;
+		}
+
+	 }
+
+	 form li{
+		padding-bottom: 30px;
+		width: 150px;
+
+	} 	
+
 	button{
-				width: 80px;
-				height: 30px;
-				border: 1px solid $deepRed;
-	    		border-radius: 25px;
-	    		cursor: pointer;
-			    transition: 0.5s;
-			    font-weight: bold;
-			    color: $deepRed;
-			}
+		width: 80px;
+		height: 30px;
+		border: 1px solid $deepRed;
+		border-radius: 25px;
+		cursor: pointer;
+	    transition: 0.5s;
+	    font-weight: bold;
+	    color: $deepRed;
 		}
-	form li{
-			padding-bottom: 30px;
-
-		}
-
-}
-
-.flex{
-
-}
+	}
 
 footer{
 		display: flex;
@@ -465,25 +491,23 @@ footer{
 		background-color: $deepRed;
 
 	.footer-content{
-			/*padding: 30px;*/
-			padding: 30px 0px;
+		padding: 30px 0px;
 		}
 		.copyright{
-			float: left;
-		p{
-				color: $offWhite;
+		float: left;
+	p{
+		color: $offWhite;
 			}
 		}
-		.icons{
-			float: right;
-			font-size: $sectionHeading;
+	.icons{
+		float: right;
+		font-size: $sectionHeading;
+	i{
+			color: $offWhite;
 
-			i{
-				color: $offWhite;
-
-			}
+		}
 			
-		}
+	}
 
 }
 
@@ -509,7 +533,7 @@ footer{
 	.burger {
 	  display: inline-block;
 	  cursor: pointer;
-	  /*padding-top: 25px;*/
+	  padding-top: 25px;
 
 	 
 	}
@@ -535,6 +559,12 @@ footer{
 	}
 	.visable{
 		display: block !important;
+	}
+/*Main ext on  lead banner*/
+	.lead-banner span{
+		font-size: $bannerTextResponsive;
+		
+
 	}
 /*Services New Collection - Best Seller*/
 	.new-collection {
@@ -589,10 +619,40 @@ footer{
 		}
 		
 	}
+
+/*Prudct Page*/	
+	.aside-checkbox{
+		display: none;
+	}
+	.aside-checkbox{
+		position: absolute;
+		display: block;
+	}
+
+	.new-collection-section{
+			width: 100%;
+		h1{
+			text-align: center;
+		}
+		.new-collection{
+			display:flex;
+			justify-content: center;
+		img{
+		   
+			}
+		}
+	}
 }
 
 /*Detail Page Responsive*/
 @media screen and (max-width: 768px) {
+/*Main ext on  lead banner*/
+	.lead-banner span{
+		font-size: $sectionHeading;
+		line-height: 70px;
+
+	}
+
 	.detail-section{
 		display: flex;
 		flex-direction: column;
@@ -602,8 +662,12 @@ footer{
 		h1{
 			width: 100%;
 			text-align: center;
-			border-bottom: none;
-			padding-bottom: 0;
+			position: absolute;
+    		top: 68px;
+    		padding-top: 35px;
+    		/*padding-bottom: 15px;*/
+			/*border-bottom: none;
+			padding-bottom: 0;*/
 			}
 		}
 	}
@@ -614,7 +678,8 @@ footer{
 		img{
 		width: 500px;
 		text-align: center;
-		height: calc(100vh - 170px);
+		margin-top: 20px;
+		height: calc(100vh - 220px);
 		}
 	} 
 	/*On the detail page little imges under the big image*/
