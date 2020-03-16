@@ -11,7 +11,7 @@
       <div class="logo"><a href="index.html"><img src="img/ninita.jpg"></a></div>
       <nav class="main-nav">
         <ul>
-            <li><a href="#">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#">New Collection</a></li>
              <div class="dropdown">
               <li class="dropbtn"><a href="products.html">Products</a>
@@ -25,12 +25,40 @@
             <li><a href="#">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-         <div class="burger none" onclick="myFunction(this)">
+         <div class="burger none" onclick="menuResponsive(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
          </div>
       </nav>
+
+        <div class="none" id="burgermenu">
+      <nav class="responsive-navigation">
+        <ul class="">
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">New Collection</a></li>
+          <!--   <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="   search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div> -->
+             <div class="dropdown">
+              <li class="dropbtn"><a href="products.html">Products</a>
+                <div class="dropdown-content">
+                  <a href="products.html">Link 1</a>
+                  <a href="products.html">Link 2</a>
+                  <a href="products.html">Link 3</a>
+                </div>
+            </li>
+            </div>
+            <li><a href="#">Portfolio</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      </div>
       <div class="login-register">
         <button class="login"> login </button> <button class="register">register</button> 
       </div>

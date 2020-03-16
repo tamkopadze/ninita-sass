@@ -8,6 +8,9 @@ button{
 .none{
 	display: none;
 }
+.uppercase{
+	text-transform: uppercase;
+}
 header{
 	background-color: $deepRed;
 	/*position: sticky;
@@ -210,9 +213,7 @@ header{
 .lead-banner{
 	position: relative;
 	height: 400px;
-	/*text-align: right;*/
-	margin-top: 10px;
-	background-color: #444142;
+	background-color: gray;
 	.banner-content{
 		position: absolute;
 		top: 50px;
@@ -325,36 +326,45 @@ header{
 		flex-wrap: wrap;
 	}
 }
-/*CONTACT PAGE*/
-.contact_blocks{
+
+/*About us Page*/
+
+.aboutus-slide{
+	background-color: $deepRed;
+	width: 100%;
+	height: 180px;
 	display: flex;
-	/*justify-content: space-between;*/
+	justify-content: center;
 	align-items: center;
-	text-align: center;
-	flex-wrap: wrap;
-	height: calc(100vh - 158px);
-	.contact_block{
-		border: 1px solid #deepRed;
-		padding: 15px 25px;
-		width: 100%;
-		max-width: 300px;
-		margin-right: 30px;
-		/*flex-wrap: wrap;*/
-		box-shadow: 0px 1px 4px 0px #DC143C;
-		img{
-		padding:30px 20px;
-	}
-	h4{
-		padding-bottom: 10px;
-		font-size: $normalText;
-		color: $deepRed;
-	}
-	.contact_block p{
-		font-size: $normalText;
+		
+	h1{
+		color: $offWhite;
+		font-size: $bannerHeading;
+		z-index: 2;
+
+	
 	}
 }
 
+.about-blocks-main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	.aboutus-blocks{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	max-width: 250px;
+	height: 250px;
+		
+	}
 }
+
+
 
 /*DETAIL PAGE*/
 .detail{
@@ -397,10 +407,53 @@ header{
 			max-width: 100px !important;
 			height: 100px !important;
 			cursor: pointer;
-			/*margin-left: 0px;*/
 			padding-right: 5px;
 		}
 	}
+
+/*CONTACT PAGE*/
+.contact-slide{
+	background-color: $deepRed;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		
+	h1{
+		color: $offWhite;
+		font-size: $bannerHeading;
+		z-index: 2;
+	}
+}
+.contact_blocks{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-top: 100px;
+    padding-bottom: 100px;    
+	z-index: 2;
+	.contact_block{
+		padding: 15px 25px;
+		width: 100%;
+		max-width: 200px;
+		height: 200px;
+		margin-right: 30px;
+		flex-wrap: wrap;
+		img{
+		width: 28px;
+		height: 28px;
+		}
+	.contact-block-p{
+		font-size: 20px;
+		padding: 10px 10px;
+	}
+}
+
+}
 
 .comments_reviews{
 		padding-top: 10px;
@@ -434,9 +487,9 @@ header{
 
 	h1{
 		font-size: $sectionHeading;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		color: $deepRed;
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 				
 	}
 	.aside-checkbox{
@@ -489,6 +542,7 @@ footer{
 		justify-content: space-between;
 		align-items: center;
 		background-color: $deepRed;
+		margin-bottom: 0px;
 
 	.footer-content{
 		padding: 30px 0px;
@@ -560,11 +614,9 @@ footer{
 	.visable{
 		display: block !important;
 	}
-/*Main ext on  lead banner*/
+/*Main text on  lead banner*/
 	.lead-banner span{
 		font-size: $bannerTextResponsive;
-		
-
 	}
 /*Services New Collection - Best Seller*/
 	.new-collection {
@@ -597,37 +649,17 @@ footer{
 		justify-content: space-around;
 		}
 	}
+}	
 
-	.contact_blocks{
-		/*display: none;*/
-		
-		
-	}
-
-	.contact_blocks{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		height: auto;
-		/*width: 100%;*/
-		.contact_block{
-			margin-top: 30px;
-			margin-bottom: 30px;
-			
-		}
-		
-	}
-
+@media screen and (max-width: 960px){
 /*Prudct Page*/	
 	.aside-checkbox{
 		display: none;
 	}
-	.aside-checkbox{
+	/*.aside-checkbox{
 		position: absolute;
 		display: block;
-	}
+	}*/
 
 	.new-collection-section{
 			width: 100%;
@@ -643,6 +675,40 @@ footer{
 		}
 	}
 }
+@media screen and (max-width: 960px) {
+	.about-blocks-main{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    }
+}
+@media screen and (max-width: 1080px){
+	.contact_blocks{
+		/*display: none;*/
+	}
+
+	.contact_blocks{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+		.contact_block{
+			/*max-width: 250px;
+			height: 250px;
+			margin-top: 30px;
+			margin-bottom: 30px;*/
+			
+		}
+		
+	}
+}		
 
 /*Detail Page Responsive*/
 @media screen and (max-width: 768px) {
@@ -701,4 +767,5 @@ footer{
 		width: 100px;
 		height: 30px;
 	}
+
 }
