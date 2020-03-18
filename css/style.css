@@ -223,13 +223,13 @@ header .search-container button i {
   color: #bf2642;
 }
 
-/*Login Register Button*/
+/*Login Registration Forms*/
 .login-registration-form {
   display: flex;
   justify-content: center;
   margin-top: 100px;
   width: 300px;
-  height: 400px;
+  height: 450px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #bf2642;
@@ -268,6 +268,68 @@ header .search-container button i {
 
 .sign-up {
   display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 16px;
+}
+.sign-up p {
+  color: #ddd;
+  padding-right: 5px;
+}
+.sign-up a span {
+  color: #44ffdd;
+  font-weight: bold;
+}
+
+/*Registration Form*/
+.register-form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 260px;
+  height: 30px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.register-form .register-button {
+  padding: 20px;
+  width: 100px;
+  margin-left: 90px;
+  color: #bf2642;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*Reset Password Form*/
+.reset-password-form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 260px;
+  height: 30px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.reset-password-form .reset-button {
+  padding: 20px;
+  width: 100px;
+  margin-left: 90px;
+  color: #bf2642;
+  font-size: 14px;
+  font-weight: bold;
+}
+.reset-password-form .reset-password {
+  color: #44ffdd;
 }
 
 /*#logo{
