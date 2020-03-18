@@ -5,21 +5,27 @@
 button{
 	cursor: pointer;
 }
+a, u{
+	text-decoration: none;
+}
 .none{
 	display: none;
 }
 .uppercase{
 	text-transform: uppercase;
 }
+.d-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 header{
 	background-color: $deepRed;
-	/*position: sticky;
-	top: 0;*/
 	.main-nav{
 	display: flex;
 	justify-content: space-around;
 	ul{
-		/*@include clearFix;*/
 		display: flex;
 		justify-content: space-around;
 		padding: 20px 0px;
@@ -68,6 +74,11 @@ header{
     }	
 
 }
+
+
+
+
+	
 
 /*Responsive navigation bar*/
 .responsive-navigation{
@@ -159,7 +170,55 @@ header{
 }
 
 }
+/*Login Register Button*/
+.login-registration-form{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	width: 300px;
+	height: 400px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: $deepRed;
+	opacity: 0.8;
+	h2{
+		color: #ddd;
+		padding: 30px 0px;
+	}
+.login-form{
+	input{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 260px;
+	height: 30px;
+	background-color: #ddd;
+	border:none;
+	border-radius: 25px; 
+	padding: 10px;
+	margin-bottom: 20px;
+	}
 
+	.login-button{
+    padding: 20px;
+    width: 100px;
+    margin-left: 90px;
+    color: $deepRed;
+    font-size: $normalText;
+    font-weight: bold;
+		}
+	}
+}
+.forget-password{
+	color: #ddd;
+	
+}
+
+.sign-up{
+	display: flex;
+}
 /*#logo{
 	font-size: 24px;
 	text-transform: uppercase;

@@ -71,6 +71,10 @@ button {
   cursor: pointer;
 }
 
+a, u {
+  text-decoration: none;
+}
+
 .none {
   display: none;
 }
@@ -79,10 +83,15 @@ button {
   text-transform: uppercase;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 header {
   background-color: #bf2642;
-  /*position: sticky;
-  top: 0;*/
   /*Responsive navigation bar*/
 }
 header .main-nav {
@@ -90,7 +99,6 @@ header .main-nav {
   justify-content: space-around;
 }
 header .main-nav ul {
-  /*@include clearFix;*/
   display: flex;
   justify-content: space-around;
   padding: 20px 0px;
@@ -213,6 +221,53 @@ header .search-container button {
 }
 header .search-container button i {
   color: #bf2642;
+}
+
+/*Login Register Button*/
+.login-registration-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #bf2642;
+  opacity: 0.8;
+}
+.login-registration-form h2 {
+  color: #ddd;
+  padding: 30px 0px;
+}
+.login-registration-form .login-form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 260px;
+  height: 30px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.login-registration-form .login-form .login-button {
+  padding: 20px;
+  width: 100px;
+  margin-left: 90px;
+  color: #bf2642;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.forget-password {
+  color: #ddd;
+}
+
+.sign-up {
+  display: flex;
 }
 
 /*#logo{
